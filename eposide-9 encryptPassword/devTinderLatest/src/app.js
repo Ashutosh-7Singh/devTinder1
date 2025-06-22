@@ -57,6 +57,7 @@ if(ispasswordValid){
     res.status(500).send("Something Went wrong" + error.message)
   }
 })
+
 app.get("/user", async (req, res) => {
   try {
     const userEmail = req.body.emailId;
